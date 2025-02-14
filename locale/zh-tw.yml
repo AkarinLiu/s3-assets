@@ -1,0 +1,50 @@
+fof-s3-assets:
+  admin:
+    settings:
+      general:
+        configured_by_environment: 您的儲存桶設定已預先配置，無需進行任何操作。
+        heading: 一般設定
+        help: 資源的一般設定。
+        shareWithFoFUpload:
+          label: 使用 FoF Upload S3 設定。
+          help: 重複使用 FoF Upload 擴充功能的 S3 設定。
+
+      revision-manifest:
+        heading: 修訂清單
+        help: 顯示修訂清單的狀態。
+        timestamp: 最後更新時間
+
+      s3:
+        cache-control:
+          label: 快取控制 (Cache-Control)
+          help: 為上傳的文件設置 Cache-Control 標頭。0 表示不進行快取。
+        keyid:
+          label: 金鑰 ID (Key ID)
+          help: S3 存取金鑰 ID。
+        secret:
+          label: 密鑰 (Secret)
+          help: S3 密鑰。
+        region:
+          label: 區域 (Region)
+          help: 您的 S3 儲存桶所在的區域。
+        bucket:
+          label: 儲存桶 (Bucket)
+          help: 您的 S3 儲存桶名稱。
+        acl:
+          label: ACL
+          help: 如有需要，請指定此儲存桶的 ACL。
+        heading: S3 設定
+        help: AWS S3 或 S3 相容儲存桶的設定。如果您使用 AWS S3，只需配置這些設定即可。
+
+      s3-compatible:
+        endpoint:
+          label: 端點 (Endpoint)
+          help: "您的 S3 相容儲存的 s3:// URL。"
+        path-style-endpoint:
+          label: 路徑風格端點 (Path style endpoint)
+          help: 某些 S3 相容儲存供應商需要此設定。請檢查您的供應商文件以確認是否需要啟用此功能。
+        url:
+          label: URL
+          help: 這是您的 S3 相容儲存的公開 URL，包括協議。如果您在 AWS S3 上使用自定義主機名稱，也可以設置此項。
+        heading: S3 相容設定
+        help: S3 相容儲存桶所需的設定。如果您使用 AWS S3，請將這些設定留空，除非您使用自定義主機名稱。

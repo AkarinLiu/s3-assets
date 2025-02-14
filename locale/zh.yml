@@ -1,0 +1,50 @@
+fof-s3-assets:
+  admin:
+    settings:
+      general:
+        configured_by_environment: 您的存储桶设置已预先配置，无需额外操作。
+        heading: 通用设置
+        help: 资源的通用设置。
+        shareWithFoFUpload:
+          label: 使用 FoF Upload 的 S3 设置。
+          help: 复用 FoF Upload 扩展中的 S3 设置。
+
+      revision-manifest:
+        heading: 修订清单
+        help: 显示修订清单状态。
+        timestamp: 最后更新时间
+
+      s3:
+        cache-control:
+          label: 缓存控制
+          help: 为上传的文件设置 Cache-Control 头。0 表示不缓存。
+        keyid:
+          label: 密钥 ID
+          help: S3 访问密钥 ID。
+        secret:
+          label: 密钥
+          help: S3 密钥。
+        region:
+          label: 区域
+          help: 您的 S3 存储桶所在的区域。
+        bucket:
+          label: 存储桶
+          help: 您的 S3 存储桶名称。
+        acl:
+          label: ACL
+          help: 如果需要，请为此存储桶指定 ACL。
+        heading: S3 设置
+        help: AWS S3 或兼容 S3 的存储桶设置。如果您使用的是 AWS S3，只需配置这些设置即可。
+
+      s3-compatible:
+        endpoint:
+          label: 端点
+          help: "您的 S3 兼容存储的 s3:// URL。"
+        path-style-endpoint:
+          label: 路径样式端点
+          help: 某些 S3 兼容存储提供商需要此设置。请查看您的提供商文档以确认是否需要启用。
+        url:
+          label: URL
+          help: 这是您的 S3 兼容存储的公开 URL，包括协议。如果您在 AWS S3 上使用自定义主机名，也可以设置此项。
+        heading: S3 兼容设置
+        help: S3 兼容存储桶所需的设置。如果您使用的是 AWS S3，除非使用自定义主机名，否则请留空这些设置。
